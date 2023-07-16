@@ -21,7 +21,7 @@ function verificarResposta1() {
     }
   }
   
-  
+ 
   function showFireworks() {
     // Cria um elemento <div> para cada fogos de artifício
     for (var i = 0; i < 20; i++) {
@@ -29,7 +29,7 @@ function verificarResposta1() {
       fireworks.className = "fireworks";
   
       // Escolhe aleatoriamente um estilo de fogos de artifício
-      var randomStyle = Math.random() < 0.5 ? "fireworks-color1" : "fireworks-color2";
+      var randomStyle = getRandomStyle();
       fireworks.classList.add(randomStyle);
   
       document.body.appendChild(fireworks);
@@ -42,3 +42,8 @@ function verificarResposta1() {
     }
   }
   
+  function getRandomStyle() {
+    var styles = ["fireworks-color1", "fireworks-color2", "fireworks-color3"];
+    var randomIndex = Math.floor(Math.random() * styles.length);
+    return styles[randomIndex];
+  }
