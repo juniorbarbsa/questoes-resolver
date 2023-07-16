@@ -21,11 +21,17 @@ function verificarResposta1() {
     }
   }
   
+  
   function showFireworks() {
     // Cria um elemento <div> para cada fogos de artifício
     for (var i = 0; i < 20; i++) {
       var fireworks = document.createElement("div");
       fireworks.className = "fireworks";
+  
+      // Escolhe aleatoriamente um estilo de fogos de artifício
+      var randomStyle = Math.random() < 0.5 ? "fireworks-color1" : "fireworks-color2";
+      fireworks.classList.add(randomStyle);
+  
       document.body.appendChild(fireworks);
   
       // Define as posições aleatórias dos fogos de artifício na tela
