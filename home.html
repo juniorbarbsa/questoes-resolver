@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resolva as Questões</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Questões</h1>
+
+  <div id="charadas-container">
+    <div id="charada1">
+      <h2>Questão 1:</h2>
+      <p>O que é, o que é? Quanto mais se tira, mais cresce?</p>
+      <input type="text" id="resposta1" placeholder="Digite sua resposta">
+      <br>
+      <button onclick="verificarResposta1()">Verificar</button>
+    </div>
+
+    <div id="charada2" style="display: none;">
+      <h2>Questões 2:</h2>
+      <p>Tenho cidades, mas não tenho casas. Tenho montanhas, mas não tenho árvores. Tenho rios, mas não tenho água. O que sou eu?</p>
+      <input type="text" id="resposta2" placeholder="Digite sua resposta">
+      <br>
+      <button onclick="verificarResposta2()">Verificar</button>
+    </div>
+
+    <div id="resultado">
+      <h2>Resolução Final</h2>
+      <p id="mensagem"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
