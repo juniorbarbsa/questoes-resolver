@@ -1,6 +1,6 @@
 function verificarResposta1() {
     var resposta1 = document.getElementById("resposta1").value.toLowerCase();
-    if (resposta1 === "buraco") {
+    if (resposta1 === "") {
       document.getElementById("charada1").style.display = "none";
       document.getElementById("charada2").style.display = "block";
     } else {
@@ -10,7 +10,7 @@ function verificarResposta1() {
   
   function verificarResposta2() {
     var resposta2 = document.getElementById("resposta2").value.toLowerCase();
-    if (resposta2 === "mapa") {
+    if (resposta2 === "") {
       // Resposta correta!
       showFireworks(); // Chama a função para exibir os fogos de artifício
       setTimeout(function() {
